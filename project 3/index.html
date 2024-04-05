@@ -3,14 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+</body>
     <title>FPS Games Survey</title>
+    <style>
+      body {
+        background-color: #b3a992; /* 沙漠色 */
+        font-size: 200%; /* 字体大小百分比 */
+        /*text-align: center;  文本居中 */
+      }
+      .centered-image {
+        display: inline-block; /* 让图片并排显示 */
+        margin: 10px; /* 图片之间的间距 */
+        filter: blur(5px); /* 添加模糊滤镜 */
+      }
+    </style>
   </head>
   <body>
     <h1>FPS Games Survey</h1>
 
     <form>
+     
       <ol>
         <li>
+          <fieldset>
           <label for="play-fps"></label>
             Do you play FPS (First Person Shooter) games?</label
           ><br />
@@ -18,57 +34,75 @@
           <label for="yes-play-fps">Yes</label><br />
           <input type="radio" id="no-play-fps" name="play-fps" value="no" />
           <label for="no-play-fps">No</label>
+          </fieldset>
         </li>
 
         <li>
-          <label for="games-played"> What games do you usually play? 
-            Examples: Call of Duty series, Counter-Strike, Battlefield series, 
-            Overwatch, Apex Legends, Valorant, Rainbow Six Siege etc.</label
-          ><br />
-          <textarea
-            id="games-played"
-            name="games-played"
-            rows="4"
-            cols="50"
-          ></textarea>
+          <fieldset>
+            <legend>What games do you usually play?</legend>
+            <input type="checkbox" id="cod" name="games-played" value="Call of Duty series" />
+            <label for="cod">Call of Duty series</label><br />
+            <input type="checkbox" id="cs" name="games-played" value="Counter-Strike" />
+            <label for="cs">Counter-Strike</label><br />
+            <input type="checkbox" id="bf" name="games-played" value="Battlefield series" />
+            <label for="bf">Battlefield series</label><br />
+            <input type="checkbox" id="ow" name="games-played" value="Overwatch" />
+            <label for="ow">Overwatch</label><br />
+            <input type="checkbox" id="apex" name="games-played" value="Apex Legends" />
+            <label for="apex">Apex Legends</label><br />
+            <input type="checkbox" id="valorant" name="games-played" value="Valorant" />
+            <label for="valorant">Valorant</label><br />
+            <input type="checkbox" id="r6" name="games-played" value="Rainbow Six Siege" />
+            <label for="r6">Rainbow Six Siege</label><br />
+            <input type="checkbox" id="other" name="games-played" value="Other" />
+            <label for="other">Other</label><br />
+          </fieldset>
         </li>
+        
+        
 
         <li>
-          <label for="attractiveness"
-            > What specific things attract you to the game?</label
-          ><br />
-          <textarea
-            id="attractiveness"
-            name="attractiveness"
-            rows="4"
-            cols="50"
-          ></textarea>
+          <fieldset>
+            <legend>What specific things attract you to the game?</legend>
+            <input type="checkbox" id="social-interaction" name="attractiveness" value="Social Interaction" />
+            <label for="social-interaction">Social Interaction</label><br />
+            <input type="checkbox" id="gameplay-depth" name="attractiveness" value="Gameplay Depth" />
+            <label for="gameplay-depth">Gameplay Depth</label><br />
+            <input type="checkbox" id="graphics-visuals" name="attractiveness" value="Graphics and Visuals" />
+            <label for="graphics-visuals">Graphics and Visuals</label><br />
+            <input type="checkbox" id="diverse-content" name="attractiveness" value="Diverse Content" />
+            <label for="diverse-content">Diverse Content</label><br />
+            <input type="checkbox" id="other" name="attractiveness" value="Other" />
+            <label for="other">Other</label><br />
+          </fieldset>
         </li>
+        
 
         <li>
-          <label for="why-like-fps"> Why do you like to play FPS games?</label
-          ><br />
-          <textarea
-            id="why-like-fps"
-            name="why-like-fps"
-            rows="4"
-            cols="50"
-          ></textarea>
+          <fieldset>
+            <legend>What aspects of the game do you prefer?</legend>
+            <input type="checkbox" id="graphics-visuals" name="aspects-preference" value="Graphics and Visuals" />
+            <label for="graphics-visuals">Graphics and Visuals</label><br />
+            <input type="checkbox" id="gameplay-mechanics" name="aspects-preference" value="Gameplay Mechanics" />
+            <label for="gameplay-mechanics">Gameplay Mechanics</label><br />
+            <input type="checkbox" id="storyline" name="aspects-preference" value="Storyline" />
+            <label for="storyline">Storyline</label><br />
+            <input type="checkbox" id="multiplayer-experience" name="aspects-preference" value="Multiplayer Experience" />
+            <label for="multiplayer-experience">Multiplayer Experience</label><br />
+            <input type="checkbox" id="customization-options" name="aspects-preference" value="Customization Options" />
+            <label for="customization-options">Customization Options</label><br />
+            <input type="checkbox" id="game-modes-variety" name="aspects-preference" value="Game Modes Variety" />
+            <label for="game-modes-variety">Game Modes Variety</label><br />
+            <input type="checkbox" id="sound-and-music" name="aspects-preference" value="Sound and Music" />
+            <label for="sound-and-music">Sound and Music</label><br />
+            <input type="checkbox" id="competitive-elements" name="aspects-preference" value="Competitive Elements" />
+            <label for="competitive-elements">Competitive Elements</label><br />
+          </fieldset>
         </li>
+        
 
         <li>
-          <label for="aspects-preference"
-            > What aspects of the game do you prefer?</label
-          ><br />
-          <textarea
-            id="aspects-preference"
-            name="aspects-preference"
-            rows="4"
-            cols="50"
-          ></textarea>
-        </li>
-
-        <li>
+          <fieldset>
           <label for="charm-fps"
             > What do you think is the charm of FPS games?</label
           ><br />
@@ -78,21 +112,23 @@
             rows="4"
             cols="50"
           ></textarea>
+            </fieldset>
         </li>
 
         <li>
-          <label for="solo-or-multiplayer"
-            > Do you prefer solo or multiplayer games? Why?</label
-          ><br />
-          <textarea
-            id="solo-or-multiplayer"
-            name="solo-or-multiplayer"
-            rows="4"
-            cols="50"
-          ></textarea>
+          <fieldset>
+            <legend>Do you prefer solo or multiplayer games?</legend>
+            <input type="radio" id="solo" name="solo-or-multiplayer" value="Solo" />
+            <label for="solo">Solo</label><br />
+            <input type="radio" id="multiplayer" name="solo-or-multiplayer" value="Multiplayer" />
+            <label for="multiplayer">Multiplayer</label><br />
+            <input type="radio" id="both" name="solo-or-multiplayer" value="Both" />
+            <label for="both">Both</label><br />
+          </fieldset>
         </li>
 
         <li>
+          <fieldset>
           <label for="successful-fps"
             > What do you think makes an FPS game successful? Why?</label
           ><br />
@@ -102,9 +138,11 @@
             rows="4"
             cols="50"
           ></textarea>
+          </fieldset>
         </li>
 
         <li>
+          <fieldset>
           <label for="positive-impact"
             > Do you believe FPS games have any potential positive impacts on
             players? If so, what are they?</label
@@ -115,9 +153,11 @@
             rows="4"
             cols="50"
           ></textarea>
+        </fieldset>
         </li>
 
         <li>
+          <fieldset>
           <label for="challenges-faced"
             > Have you faced any challenges in the game? How did you overcome
             them?</label
@@ -128,10 +168,12 @@
             rows="4"
             cols="50"
           ></textarea>
+        </fieldset>
         </li>
       </ol>
 
-      <input type="submit" value="Submit" />
+      <a href="thank-you.html"><input type="button" value="Submit" /></a>
+
     </form>
   </body>
 </html>
