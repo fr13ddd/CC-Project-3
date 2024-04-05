@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,
+    200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,
+    600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>See Your Result</title>
+    <style>
+      .custom-button {
+    
+    background-color: black; 
+    
+    color: orange; 
+    padding: 2% 4%;
+    border-radius: 15%;
+    text-align: center; 
+    display: inline-block; 
+    font-size: 70%; 
+    cursor: pointer; 
+
+    .centered-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10%;
+    }
+}
+
+.custom-button:hover {
+   color: orange; 
+}
+      body {
+        font-family: 'Kanit', sans-serif;
+        background-color: #beb5a3; 
+        font-size: 150%; 
+        text-align: center;
+      }
+      .centered-image {
+        display: inline-block; 
+        margin: 10px; 
+        filter: blur(0px); 
+      }
+    </style>
+  </head>
+  <body>
+    <h1>See Your Result</h1>
+    <p>Click the button below to see your result!</p>
+    <br>
+
+    <button class = "custom-button"onclick="redirectToResult()">See Result</button>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+
+   
+
+    <div>
+      <img src="pictures/fei5.png" alt="Description of the image" width="80%" height="80%" class="centered-image">
+    </div>
+
+<script>
+  function redirectToResult() {
+    
+    var randomValue = Math.random();
+
+   
+    var nextPage = "";
+    if (randomValue < 0.5) {
+      nextPage = "thank-you.html"; 
+    } else {
+      nextPage = "thank-you2.html"; 
+    }
+
+    
+    window.location.href = nextPage;
+  }
+</script>
+    
+   
+  </body>
+</html>

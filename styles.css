@@ -1,0 +1,42 @@
+/* Kanit Thin */
+.kanit-thin, .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+  }
+  
+  .kanit-thin-italic {
+    font-style: italic;
+  }
+  
+  /* Kanit Extra Light */
+  .kanit-extralight, .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+  }
+  
+  .kanit-extralight-italic {
+    font-style: italic;
+  }
+  
+  /* Kanit Light */
+  .kanit-light, .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+  }
+  
+  .kanit-light-italic {
+    font-style: italic;
+  }
+  
+  /* Kanit Regular */
+  .kanit-regular, .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+  }
+  
+  .kanit-regular-italic {
+    font-style: italic;
+  }
+  
+
+  
